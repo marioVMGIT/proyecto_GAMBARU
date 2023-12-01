@@ -8,11 +8,50 @@
  .espacio{
   height: 170px;
  }
+ #servTitle{
+  background-color: rgba(16, 112, 127, 0.608);
+}
+#cuadPrec{
+  background-color: #0e6a78;
+}
+#borderColor{
+  border-bottom: #138496;
+  border-bottom-color: #138496;
+}
+#horAten{
+  background-color: #0c5460;
+  border-color: #0c5460;
+}
+#horAtenBut{
+  background-color: #3b9cae;
+  border-color: #3b9cae;
+}
+#cuadHor{
+  background-color: rgba(249, 237, 237, 0.977);
+  color: white;
+}
+#horAtenBut:hover{
+  background-color: #1f4f57;
+  border-color: #1f4f57;
+}
+#cuadColo{
+  background-color: #138496;
+  border-color: #138496;
+}
+#imgPat{
+  margin: auto;
+}
  #facImg{
   color: #FFFFFF;
  }
  #facImg:hover{
   color: rgb(13, 4, 190)
+ }
+ #WhatImg{
+  color: #FFFFFF;
+ }
+ #WhatImg:hover{
+  color: rgb(26, 190, 4);
  }
 #tpBar{
   background-color: #117a8b;
@@ -71,6 +110,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+#footTitle{
+  color: #54becf;
+}
+#testTitle{
+  background-color: rgba(16, 112, 127, 0.608);
+  color: #117a8b;
 }
 
 html {
@@ -559,6 +605,10 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+.img-fluid-pat {
+  max-width: 100%;
+  height: 300px;
 }
 
 .img-thumbnail {
@@ -6254,7 +6304,7 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #F9A392 !important;
+  border-color: #10707f !important;
 }
 
 .border-secondary {
@@ -9296,7 +9346,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #F9A392 !important;
+  color: #138496 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9629,7 +9679,7 @@ h6,
 }
 
 .bg-appointment {
-  background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../img/carousel-1.jpg), no-repeat center center;
+  background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../img/abo2.jpg), no-repeat center center;
   background-size: cover;
 }
 
@@ -9698,14 +9748,22 @@ h6,
   margin: 0 5px;
   width: 25px;
   height: 25px;
-  background: #FEF1EF;
-  border: 1px solid #F9A392;
+  background: #138496;
+  border: 1px solid #138496;
   transition: .5s;
 }
+#iconTest{
+  color: #138496;
+}
 
+#butBacktop{
+  background-color: #1a8b8f;
+  border: #1a8b8f;
+}
 .testimonial-carousel .owl-dot.active {
   width: 50px;
-  background: #F9A392;
+  background: #138496;
+  border-color: black;
 }
 
 .footer p,
