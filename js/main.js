@@ -52,7 +52,7 @@
     // Service carousel
     $(".service-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1500,
+        smartSpeed: 1000,
         loop: true,
         dots: false,
         nav : false,
@@ -107,7 +107,27 @@
         loop: true,
         items: 1
     });
-  
+    $(".pat-carousel").owlCarousel({
+        autoplay: false,
+        smartSpeed: 1500,
+        margin: 30,
+        dots: true,
+        loop: true,
+        items: 1
+    });
+    
+      // Modal Video
+      var $videoSrc;
+      $('.btn-play').click(function () {
+          $videoSrc = $(this).data("src");
+      });
+      console.log($videoSrc);
+      $('#videoModal').on('shown.bs.modal', function (e) {
+          $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+      })
+      $('#videoModal').on('hide.bs.modal', function (e) {
+          $("#video").attr('src', $videoSrc);
+      })
 
 })(jQuery);
 

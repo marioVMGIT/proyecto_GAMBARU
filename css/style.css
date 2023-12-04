@@ -5,14 +5,47 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ #patImg{
+  width: 200px;
+  height: 200px;
+ }
+ .imgProducto{
+  height: 150px;
+  width: auto;
+ }
+
+ #colorProd{
+  background: linear-gradient(rgba(15, 63, 56, 0.85),rgba(7, 120, 151, 0.85));
+  border-radius: 10%;
+  text-align: center;
+ }
+ #colorPat{
+  background-color: #0f6674;
+ }
+ #colorPat2{
+  background-color: #f6f6f6;
+ }
+ #titleProd{
+  margin:auto;
+  font-size: 250%;
+  color: #000000;
+ }
+ #backProd{
+  height: 500px;
+  text-align: center;
+
+ }
  .espacio{
-  height: 170px;
+  height: 100px;
  }
  #servTitle{
   background-color: rgba(16, 112, 127, 0.608);
 }
 #cuadPrec{
   background-color: #0e6a78;
+}
+#cajaTratamiento{
+  display: flex;
 }
 #borderColor{
   border-bottom: #138496;
@@ -638,6 +671,11 @@ code {
   color: #e83e8c;
   word-wrap: break-word;
 }
+.video {
+  background: linear-gradient(rgba(78, 158, 180, 0.85), rgba(34, 92, 83, 0.85)), url(../img/video-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
 
 a > code {
   color: inherit;
@@ -6258,6 +6296,11 @@ button.bg-dark:focus {
 .bg-white {
   background-color: #fff !important;
 }
+.bg-whiteFinal {
+  background-color: #fff !important;
+  margin-top: 100px;
+  border-radius: 10%;
+}
 
 .bg-transparent {
   background-color: transparent !important;
@@ -9689,9 +9732,14 @@ h6,
 }
 
 .bg-jumbotron {
-  background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../img/carousel-3.jpg), no-repeat center center;
+  background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../img/Header_pedicurecasero.jpg), no-repeat center center;
   background-size: cover;
 }
+.bg-jumbotron2 {
+  background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../img/header2.jpg), no-repeat center center;
+  background-size: cover;
+}
+
 
 @media (min-width: 992px) {
   .hours-text,
@@ -9751,6 +9799,24 @@ h6,
   background: #138496;
   border: 1px solid #138496;
   transition: .5s;
+}
+.pat-carousel .owl-dots {
+  margin-top: 20px;
+}
+
+.pat-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 25px;
+  height: 25px;
+  background: #138496;
+  border: 1px solid #138496;
+  transition: .5s;
+}
+.pat-carousel .owl-dot.active {
+  width: 50px;
+  background: #138496;
+  border-color: black;
 }
 #iconTest{
   color: #138496;
