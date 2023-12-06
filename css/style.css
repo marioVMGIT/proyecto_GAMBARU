@@ -9,11 +9,49 @@
   width: 200px;
   height: 200px;
  }
+ #colorLoc{
+  background-color: #0c5460;
+ }
+ .titleUbi{
+  background-color: #44b6ca;
+  width: 50px;
+  border-radius: 5%;
+  margin-bottom: 10%;
+ }
  .imgProducto{
   height: 150px;
   width: auto;
  }
-
+#map {
+	height: 500px;
+	width: 100%;
+  align-items: center;
+}
+#infoMario{
+  background-color: #018aa2;
+}
+#enviarSolicitudBtn{
+  background-color: #0c5460;
+  border-color: #0c5460;
+}
+#InstaImg{
+  color: white;
+}
+#InstaImg:hover{
+  color: purple;
+}
+#LkdImg{
+  color: white;
+}
+#LkdImg:hover{
+  color: rgb(59, 59, 59);
+}
+#rayaInfo{
+  background-color: white;
+}
+#infoColor{
+  color: white;
+}
  #colorProd{
   background: linear-gradient(rgba(15, 63, 56, 0.85),rgba(7, 120, 151, 0.85));
   border-radius: 10%;
@@ -1939,6 +1977,10 @@ pre code {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+  .imgProducto{
+    height: 70px;
+    width: 70;
+   }
   .table-responsive-sm > .table-bordered {
     border: 0;
   }

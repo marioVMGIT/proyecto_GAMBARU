@@ -65,11 +65,12 @@
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
                     <a href="index.html" class="nav-item nav-link active" id="colorNavFijo">Principal</a>
-                    <a href="sobreNosotros.html" class="nav-item nav-link" id="colorNav">Sobre Nosotros</a>
+                    <a href="sobreNosotros.html" class="nav-item nav-link" id="colorNav">SobreNosotros</a>
                     <a href="servicios.html" class="nav-item nav-link" id="colorNav">Servicios</a>
                     <a href="precios.html" class="nav-item nav-link" id="colorNav">Precios</a>
                     <a href="testimonios.html" class="nav-item nav-link" id="colorNav">Testimonios</a>
                     <a href="contacto.html" class="nav-item nav-link" id="colorNav">Contáctanos</a>
+                    <a href="Autor.html" class="nav-item nav-link" id="colorNav">Autor</a>
                 </div>
             </div>
         </nav>
@@ -372,16 +373,16 @@
             <div class="col-lg-6 py-5">
                 <div class="p-5 my-5" style="background: rgba(33, 30, 28, 0.7);">
                     <h1 class="text-white text-center mb-4">Solicitar Cita</h1>
-                    <form>
+                    <form action="https://formsubmit.co/marioamurillo27@gmail.com" method="POST"  id="solicitudForm">
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control bg-transparent p-4" placeholder="Nombre" required="required" />
+                                    <input type="text" class="form-control bg-transparent p-4" name="nombre" placeholder="Nombre" required="required" />
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control bg-transparent p-4" placeholder="Correo" required="required" />
+                                    <input type="email" class="form-control bg-transparent p-4" name="correo" placeholder="Correo" required="required" />
                                 </div>
                             </div>
                         </div>
@@ -389,34 +390,45 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Fecha" data-target="#date" data-toggle="datetimepicker"/>
+                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" name="fecha" placeholder="Fecha" data-target="#date" data-toggle="datetimepicker"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Hora" data-target="#time" data-toggle="datetimepicker"/>
+                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" name="hora" placeholder="Hora" data-target="#time" data-toggle="datetimepicker"/>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <select class="custom-select bg-transparent px-4" style="height: 47px;" name="servicio">
+                                        <option selected>Servicio Requerido</option>
+                                        <option value="Quiropodia">Quiropodia</option>
+                                        <option value="Manicura">Manicura</option>
+                                        <option value="Otros Servicios">Otros Servicios</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <select class="custom-select bg-transparent px-4" style="height: 47px;">
-                                        <option selected>Servicio Requerido</option>
-                                        <option value="1">Quiropodia</option>
-                                        <option value="2">Manicura</option>
-                                        <option value="3">Otros Servicios</option>
-                                    </select>
+                                    <textarea  cols="5" rows="1" name="mensaje" placeholder="Mensaje" class="form-control bg-transparent p-4"></textarea>
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <button class="btn btn-primary btn-block" type="submit" style="height: 47px;" id="horAten">Enviar Solicitud</button>
+                                <button class="btn btn-primary btn-block " type="submit" style="height: 75px;" id="enviarSolicitudBtn" >Enviar Solicitud</button>
                             </div>
                         </div>
                     </form>
+                    </div>
+                  </div>
+          
+                </div>
                 </div>
             </div>
         </div>

@@ -1,7 +1,10 @@
+/*Abajo encontrara los diferentes usos de esta hoja JS dentro de las páginas de este 
+proyectos*/
+
 (function ($) {
     "use strict";
     
-    // Dropdown on mouse hover
+    // Uso para los Dropdows y los Hover del mouse 1 Uso JavaScript
     $(document).ready(function () {
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
@@ -19,7 +22,7 @@
     });
     
     
-    // Back to top button
+    // Uso Botón para volver al inicio
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
@@ -31,7 +34,6 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
@@ -49,7 +51,7 @@
     });
 
 
-    // Service carousel
+    // Carrousel de Servicios
     $(".service-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
@@ -76,7 +78,7 @@
     });
 
 
-    // Pricing carousel
+    // Carrousel de Precios
     $(".pricing-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
@@ -98,7 +100,7 @@
     });
 
 
-    // Testimonials carousel
+    // Carrousel de Testimonios 
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
@@ -116,7 +118,7 @@
         items: 1
     });
     
-      // Modal Video
+      // Estilo Modal para el video
       var $videoSrc;
       $('.btn-play').click(function () {
           $videoSrc = $(this).data("src");
@@ -130,4 +132,60 @@
       })
 
 })(jQuery);
+
+//Iniciar Mapa API y Crear Ruta
+function iniciarMap() {
+    var coord = {lat:10.059308 ,lng: -84.200822};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: coord,
+    });
+    var marker = new google.maps.Marker({
+        position: coord,
+        map: map
+    });
+  
+    // Agrega el evento click al botón
+    document.getElementById('rutaButton').addEventListener('click', function () {
+        generarRuta(map, coord);
+    });
+  }
+  
+  function generarRuta(map, destination) {
+    // Verifica si el navegador soporta la geolocalización
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var origin = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+  
+            // Crea una solicitud de dirección
+            var directionsService = new google.maps.DirectionsService();
+            var directionsRenderer = new google.maps.DirectionsRenderer({
+                map: map
+            });
+  
+            var request = {
+                origin: origin,
+                destination: destination,
+                travelMode: 'DRIVING' // Puedes cambiar esto según tus necesidades
+            };
+  
+            // Calcula la ruta y la muestra en el mapa
+            directionsService.route(request, function (result, status) {
+                if (status == 'OK') {
+                    directionsRenderer.setDirections(result);
+                } else {
+                    alert('Error al generar la ruta: ' + status);
+                }
+            });
+        }, function () {
+            alert('Error al obtener la ubicación actual.');
+        });
+    } else {
+        alert('Tu navegador no soporta la geolocalización.');
+    }
+  }
+  
 
