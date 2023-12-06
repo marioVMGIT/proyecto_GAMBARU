@@ -1978,7 +1978,7 @@ pre code {
     -webkit-overflow-scrolling: touch;
   }
   .imgProducto{
-    height: 70px;
+    height: 120px;
     width: 70;
    }
   .table-responsive-sm > .table-bordered {
@@ -6337,6 +6337,7 @@ button.bg-dark:focus {
 
 .bg-white {
   background-color: #fff !important;
+  width: 105%;
 }
 .bg-whiteFinal {
   background-color: #fff !important;
