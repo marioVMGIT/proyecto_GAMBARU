@@ -38,9 +38,10 @@
                     <small><i class="fa fa-envelope mr-2"></i>roxinyalpizarsalas@gmail.com</small>
                 </div>
             </div>
-            <div class="col-lg-6 text-right" >
+            <div class="col-lg-6 text-right">
                 <div class="d-inline-flex align-items-center">
-                    <a class="text-primary px-2" href="https://www.facebook.com/roxiny.alpizar.1?mibextid=LQQJ4d" target="_blank">
+                    <a class="text-primary px-2" href="https://www.facebook.com/roxiny.alpizar.1?mibextid=LQQJ4d"
+                        target="_blank">
                         <i class="fab fa-facebook" id="facImg">Facebook</i>
                     </a>
                     <a class="text-primary px-2" href="https://wa.me/84052242" target="_blank">
@@ -90,23 +91,27 @@
         </div>
     </div>
     <!-- Header End -->
-   
+
     <!-- Horas de Servicio Inicio -->
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-6" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/Podologiaareaespecifica.png" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="img/Podologiaareaespecifica.png"
+                            style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 pt-5 pb-lg-5">
                     <div class="hours-text p-4 p-lg-5 my-lg-5" id="cuadHor">
-                        <h6 class="d-inline-block text-white text-uppercase  py-1 px-2" id="horAten">Horario Atención</h6>
+                        <h6 class="d-inline-block text-white text-uppercase  py-1 px-2" id="horAten">Horario Atención
+                        </h6>
                         <h1 class="mb-4">Trabajos con Citas Programadas</h1>
                         <ul class="list-inline">
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Lunes – Viernes : 9:00 AM - 7:00 PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sábados : 9:00 AM - 6:00 PM</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Lunes – Viernes : 9:00 AM
+                                - 7:00 PM</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sábados : 9:00 AM - 6:00
+                                PM</li>
                             <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Domingos : Cerrado</li>
                         </ul>
                         <a href="https://wa.me/84052242" class="btn btn-primary mt-2" id="horAtenBut">Programar Cita</a>
@@ -124,73 +129,191 @@
                 <h1 class="text-white text-center mb-4">Ubicación</h1>
                 <div class="position-relative h-100">
                     <script src="js/main.js"></script>
-                    <button id="rutaButton">Generar Ruta</button>
                     <div id="map"></div>
+                    <button id="rutaButton" class="ButRuta">Click para generar ruta desde tu ubicación a
+                        nosotros.</button>
                     <script async
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwqMxkxuPPAadkfnffX9U7qqy9ggnvvhc&callback=iniciarMap">
-                    </script>
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwqMxkxuPPAadkfnffX9U7qqy9ggnvvhc&callback=iniciarMap">
+                        </script>
 
                 </div>
             </div>
         </div>
     </div>
-   
-    
-            
     <!-- Contact End -->
 
+    <!--Formulario con Edad-->
+    <div class="row justify-content-center bg-appointment mx-0">
+        <div class="col-lg-6 py-5">
+            <div class="p-5 my-5" style="background: rgba(33, 30, 28, 0.7);">
+                <h1 class="text-white text-center mb-4">Solicitud Trabajo</h1>
+                <form action="https://formsubmit.co/marioamurillo27@gmail.com" method="POST" id="solicitudForm">
+                    <div class="form-row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control bg-transparent p-4" placeholder="Email"
+                                    id="email" name="Email" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class="date" id="date" data-target-input="nearest">
+                                    <input type="text" class="form-control bg-transparent p-4 datetimepicker-input"
+                                        name="FechaNacimiento" placeholder="FechaNacimiento" id="birthdate" data-target="#date"
+                                        data-toggle="datetimepicker" required />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input type="text" id="fullName" class="form-control bg-transparent p-4"
+                                    placeholder="NombreCompleto" name="NombreCompleto" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-sm-9">
+                            <div class="form-group">
+                                <H2 class="form-control bg-transparent p-4 rangoS">Rango Salarial: <span
+                                        id="valorRango">375000</span> colones</H2>
 
-      <!-- Footer Inicio -->
-      <div class="container-fluid bg-dark text-light border-top" style="border-color: rgba(256, 256, 256, .15) !important;">
-        <div class="row">
-            <div class="col-lg-12 pr-lg-5 mb-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="mb-3" id="footTitle">GAMBARU</h1>
-                </a>
-                <p>Toda una experiencia en salud de tus pies y manos, atrévete a consentirte y contáctanos para mejorar tu vida y conocerte mejor.</p>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Pilas, Alajuela, CR</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+506 8405 2242</p>
-                <p><i class="fa fa-envelope mr-2"></i>roxinyalpizarsalas@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <input type="range" min="375000" max="5000000" id="incomeRange"
+                                    class="form-control bg-transparent p-4" placeholder="rango" name="Rango Salario">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <select class="custom-select bg-transparent px-4" style="height: 47px;" name="Género"
+                                    required>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="femenino">Femenino</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <select class="custom-select bg-transparent px-4" style="height: 47px;"
+                                    name="GradoAcadémico" required>
+                                    <option value="secundaria">Secundaria</option>
+                                    <option value="preparatoria">Preparatoria</option>
+                                    <option value="licenciatura">Licenciatura</option>
+                                    <option value="maestria">Maestría</option>
+                                    <option value="doctorado">Doctorado</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary btn-block " type="submit" style="height: 75px;"
+                            id="enviarSolicitudBtn" >Enviar Solicitud</button>
+                    </div>
+                    <input type="hidden" name="_next" value="https://mariovmgit.github.io/proyecto_GAMBARU/">
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Campo oculto para la edad -->
+                    <input type="hidden" id="age" name="Edad">
+                    
+                </form>
             </div>
-            
         </div>
-    </div>
-    <div class="container-fluid bg-dark text-light border-top py-4" style="border-color: rgba(256, 256, 256, .15) !important;">
-        <div class="container">
+        <script>
+            //Calcular Edad en Formulario
+            function calcularEdad() {
+                // Obtener la fecha de nacimiento del formulario
+                const fechaNacimiento = document.getElementById("birthdate").value;
+
+                // Calcular la edad
+                const today = new Date();
+                const birthDate = new Date(fechaNacimiento);
+                let age = today.getFullYear() - birthDate.getFullYear();
+
+                // Ajustar la edad si aún no ha pasado el cumpleaños este año
+                if (
+                    today.getMonth() < birthDate.getMonth() ||
+                    (today.getMonth() === birthDate.getMonth() &&
+                        today.getDate() < birthDate.getDate())
+                ) {
+                    age--;
+                }
+
+                // Asignar la edad al campo oculto
+                document.getElementById("age").value = age;
+            }
+            //Rangos de salario
+            var barraRango = document.getElementById("incomeRange");
+            var spanValorRango = document.getElementById("valorRango");
+
+            // Agregar un evento de cambio a la barra de plazo
+            barraRango.addEventListener("input", function () {
+                // Actualizar el contenido del span con el valor seleccionado
+                spanValorRango.textContent = barraRango.value;
+            });
+        </script>
+
+        <!-- Footer Inicio -->
+        <div class="container-fluid bg-dark text-light border-top"
+            style="border-color: rgba(256, 256, 256, .15) !important;">
             <div class="row">
-                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                    <p class="m-0 text-white">&copy; <a href="#">Página Diseñada por: Mario Vindas</a></p>
+                <div class="col-lg-12 pr-lg-5 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mb-3" id="footTitle">GAMBARU</h1>
+                    </a>
+                    <p>Toda una experiencia en salud de tus pies y manos, atrévete a consentirte y contáctanos para
+                        mejorar tu vida y conocerte mejor.</p>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Pilas, Alajuela, CR</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+506 8405 2242</p>
+                    <p><i class="fa fa-envelope mr-2"></i>roxinyalpizarsalas@gmail.com</p>
                 </div>
-                <div class="col-md-6 text-center text-md-right">
-                    <p class="m-0 text-white"> <a href="https://htmlcodex.com">All Rights Reserved</a></p>
+
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-light border-top py-4"
+            style="border-color: rgba(256, 256, 256, .15) !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                        <p class="m-0 text-white">&copy; <a href="#">Página Diseñada por: Mario Vindas</a></p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <p class="m-0 text-white"> <a href="https://htmlcodex.com">All Rights Reserved</a></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer Final -->
+        <!-- Footer Final -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary back-to-top" id="butBacktop"><i class="fa fa-angle-double-up"></i></a>
-   
-   
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary back-to-top" id="butBacktop"><i class="fa fa-angle-double-up"></i></a>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
 </body>
 
 </html>

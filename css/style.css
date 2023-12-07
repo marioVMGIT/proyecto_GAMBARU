@@ -18,6 +18,7 @@
   border-radius: 5%;
   margin-bottom: 10%;
  }
+
  .imgProducto{
   height: 150px;
   width: auto;
@@ -96,6 +97,14 @@
 #horAtenBut{
   background-color: #3b9cae;
   border-color: #3b9cae;
+}
+.ButRuta{
+  background-color: #3b9cae;
+  border-color: #3b9cae;
+}
+.ButRuta:hover{
+  background-color: #f8feff;
+  border-color: #fdfdfd;
 }
 #cuadHor{
   background-color: rgba(249, 237, 237, 0.977);
@@ -765,6 +774,10 @@ pre code {
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
+  }
+  .rangoS{
+    font-size: smaller;
+    color: #018aa2;
   }
 }
 
